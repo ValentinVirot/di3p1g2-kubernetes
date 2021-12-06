@@ -46,7 +46,7 @@ catalog:
   RabbitMQUser: user
   RabbitMQPassword: IrIBDRhFgp
   RabbitMQUrl: 10.4.111.30
-  RabbitMQ_PORT: 5672
+  RabbitMQ_PORT: "5672"
   RabbitMQqueue: basket
   elasticsearchUrl: http://10.4.111.23:9200
   DatabaseConnectionString: Data Source=10.4.111.21;Initial Catalog=pastouche-geoffrey;User ID=sa;Password=Admin123
