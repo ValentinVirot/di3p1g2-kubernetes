@@ -26,10 +26,12 @@ serviceAccount:
 
 podAnnotations: {}
 
-podSecurityContext: {}
+podSecurityContext:
+  {}
   # fsGroup: 2000
 
-securityContext: {}
+securityContext:
+  {}
   # capabilities:
   #   drop:
   #   - ALL
@@ -39,22 +41,21 @@ securityContext: {}
 
 service:
   type: LoadBalancer
-  port: 80
+  port: 443
 basket:
-  port: 80
+  port: 443
   RabbitMQUser: user
-  RabbitMQPassword: RPT6JQX3tT
-  RabbitMQUrl: 10.4.111.35
+  RabbitMQPassword: IrIBDRhFgp
+  RabbitMQUrl: 10.4.111.30
   BaseKey: user
-  RedisIP: 10.4.111.27
+  RedisIP: 10.4.111.32
   RedisPort: 6379
   RabbitMQPort: 5672
   RabbitMQqueue: basket
-  RedisPWD: V7L22IJQue
-  
+  RedisPWD: toor
 
-
-resources: {}
+resources:
+  {}
   # We usually recommend not to specify default resources and to leave this as a conscious
   # choice for the user. This also increases chances charts run on environments with little
   # resources, such as Minikube. If you do want to specify resources, uncomment the following
